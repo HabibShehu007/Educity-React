@@ -49,6 +49,5 @@ This starter will evolve into a full-stack ecosystem with:
 
 ---
 
-Habib Shehu React Developer | Node.js Enthusiast | Full-Stack Explorer 📍 Katsina State, Nigeria 📧 Contact: Contact@habibshehu0007 🌐 GitHub: github.com/HabibShehu007
-
+Habib Shehu React Developer | Node.js Enthusiast | Full-Stack Explorer 📍 Katsina State, Nigeria
 
