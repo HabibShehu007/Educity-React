@@ -8,7 +8,7 @@
 
 ## 🌐 Live Demo
 
-> Coming soon: [https://HabibShehu007.github.io/Educity-React/](https://HabibShehu007.github.io/Educity-React/)
+> Click it Up: [https://HabibShehu007.github.io/Educity-React/](https://HabibShehu007.github.io/Educity-React/)
 
 ---
 
@@ -49,8 +49,6 @@ This starter will evolve into a full-stack ecosystem with:
 
 ---
 
-## 🧪 Getting Started
+Habib Shehu React Developer | Node.js Enthusiast | Full-Stack Explorer 📍 Katsina State, Nigeria 📧 Contact: Contact@habibshehu0007 🌐 GitHub: github.com/HabibShehu007
 
-```bash
-npm install
-npm run dev
+
