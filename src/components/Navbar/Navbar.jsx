@@ -24,19 +24,18 @@ const navbar = () => {
 
 
   return (
-    <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
-     <img src={logo} alt='' className='logo'/>
-     <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
-      <li><Link to='hero' smooth={true} offset={0} duration={500}><FaHome /> Home</Link></li>
-      <li><Link to='program' smooth={true} offset={-260} duration={500}><FaBookOpen /> Program</Link></li>
-       <li><Link to='about' smooth={true} offset={-150} duration={500}><FaInfoCircle /> About Us</Link></li>
-       <li><Link to='campus' smooth={true} offset={-260} duration={500}><FaUniversity /> Campus</Link></li>
-        <li><Link to='testimonials' smooth={true} offset={-260} duration={500}><FaQuoteRight /> Testimonials</Link></li>
-         <li><Link to='contact' smooth={true} offset={-260} duration={500} className='btn'><FaEnvelope /> Contact Us</Link></li>
-    </ul>
-
-     <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
-    </nav>
+      <nav className={`container ${sticky ? 'dark-nav' : ''}`}>
+        <img src={logo} alt='' className='logo'/>
+        <ul className={mobileMenu ? '' : 'hide-mobile-menu'}>
+          <li><Link to='hero' smooth={true} offset={0} duration={500}><FaHome /> Home</Link></li>
+          <li><Link to='program' smooth={true} offset={-260} duration={500}><FaBookOpen /> Program</Link></li>
+          <li><Link to='about' smooth={true} offset={-150} duration={500}><FaInfoCircle /> About Us</Link></li>
+          <li><Link to='campus' smooth={true} offset={-260} duration={500}><FaUniversity /> Campus</Link></li>
+          <li><Link to='testimonials' smooth={true} offset={-260} duration={500}><FaQuoteRight /> Testimonials</Link></li>
+          <li><Link to='contact' smooth={true} offset={-260} duration={500} className='btn'><FaEnvelope /> Contact Us</Link></li>
+        </ul>
+        <img src={menu_icon} alt="" className='menu-icon' onClick={toggleMenu} />
+      </nav>
   )
 }
 
