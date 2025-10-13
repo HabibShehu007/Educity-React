@@ -1,7 +1,5 @@
-import React, { useRef } from "react";
+import React, { useRef, useEffect } from "react";
 import "./Testimonials.css";
-import next_icon from "../../assets/next-icon.png";
-import back_icon from "../../assets/back-icon.png";
 import user_1 from "../../assets/user-1.png";
 import user_2 from "../../assets/user-2.png";
 import user_3 from "../../assets/user-3.png";
@@ -11,28 +9,18 @@ const Testimonials = () => {
   const slider = useRef();
   let tx = 0;
 
-  const slideForward = () => {
-    if (tx > -50) {
+  useEffect(() => {
+    const interval = setInterval(() => {
       tx -= 25;
-    }
-    slider.current.style.transform = `translateX(${tx}%)`;
-  };
-  const slideBackward = () => {
-    if (tx < 0) {
-      tx += 25;
-    }
-    slider.current.style.transform = `translateX(${tx}%)`;
-  };
+      if (tx < -75) tx = 0;
+      slider.current.style.transform = `translateX(${tx}%)`;
+    }, 4000); // Change slide every 4 seconds
+
+    return () => clearInterval(interval); // Cleanup on unmount
+  }, []);
 
   return (
     <div className="testimonials">
-      <img src={next_icon} alt="" className="next-btn" onClick={slideForward} />
-      <img
-        src={back_icon}
-        alt=""
-        className="back-btn"
-        onClick={slideBackward}
-      />
       <div className="slider">
         <ul ref={slider}>
           <li>
@@ -62,15 +50,8 @@ const Testimonials = () => {
                 </div>
               </div>
               <p>
-               Studying at Edusity has
-               transformed not just my
-              academic journey, but my
-              confidence and outlook on
-           life. The mentorship and hands-on
-          learning experiences helped me discover
-            strengths I never knew I had.
-           </p>
-
+                Studying at Edusity has transformed not just my academic journey, but my confidence and outlook on life. The mentorship and hands-on learning experiences helped me discover strengths I never knew I had.
+              </p>
             </div>
           </li>
           <li>
@@ -83,14 +64,8 @@ const Testimonials = () => {
                 </div>
               </div>
               <p>
-               Edusity prepared me for the real 
-               world in ways I didn’t expect.
-                From practical workshops to
-                 career guidance, every step was
-                  designed to help me 
-                   beyond the classroom.
+                Edusity prepared me for the real world in ways I didn’t expect. From practical workshops to career guidance, every step was designed to help me succeed beyond the classroom.
               </p>
-
             </div>
           </li>
           <li>
@@ -103,13 +78,8 @@ const Testimonials = () => {
                 </div>
               </div>
               <p>
-                    What makes Edusity special is
-                     the sense of belonging. I found lifelong
-                      friends, supportive faculty, and a campus 
-                      culture that truly celebrates diversity 
-                      and ambition.
+                What makes Edusity special is the sense of belonging. I found lifelong friends, supportive faculty, and a campus culture that truly celebrates diversity and ambition.
               </p>
-
             </div>
           </li>
         </ul>
