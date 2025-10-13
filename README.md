@@ -4,23 +4,11 @@
   <strong>Welcome to my React journey</strong> — this project marks the beginning of building powerful, scalable, and modern web applications using <strong>React</strong> and <strong>Vite</strong>.
 </p>
 
-<p align="center">
-  <a href="https://github.com/habibshehu/react-vite-starter">
-    <img src="https://img.shields.io/github/stars/habibshehu/react-vite-starter?style=social" alt="GitHub stars" />
-  </a>
-  <a href="https://github.com/habibshehu/react-vite-starter">
-    <img src="https://img.shields.io/github/forks/habibshehu/react-vite-starter?style=social" alt="GitHub forks" />
-  </a>
-  <a href="https://github.com/habibshehu/react-vite-starter/blob/main/LICENSE">
-    <img src="https://img.shields.io/github/license/habibshehu/react-vite-starter" alt="License" />
-  </a>
-</p>
-
 ---
 
 ## 🌐 Live Demo
 
-> Coming soon: [https://habibshehu.github.io/react-vite-starter](https://habibshehu.github.io/react-vite-starter)
+> Coming soon: [https://HabibShehu007.github.io/Educity-React/](https://HabibShehu007.github.io/Educity-React/)
 
 ---
 
