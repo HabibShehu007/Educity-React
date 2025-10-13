@@ -41,6 +41,11 @@ nav ul li {
   display: none;
 }
 
+ul li svg {
+  margin-right: 8px;
+  vertical-align: middle;
+}
+
 @media (max-width: 840px) {
   nav {
     padding: 15px 0;

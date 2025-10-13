@@ -41,7 +41,7 @@ const Testimonials = () => {
                 <img src={user_1} alt="" />
                 <div>
                   <h3>William Jackson 1</h3>
-                  <span>Edusity, USA</span>
+                  <span>Edusity, Canada</span>
                 </div>
               </div>
               <p>
@@ -58,15 +58,19 @@ const Testimonials = () => {
                 <img src={user_2} alt="" />
                 <div>
                   <h3>William Jackson 2</h3>
-                  <span>Edusity, USA</span>
+                  <span>Edusity, Italy</span>
                 </div>
               </div>
               <p>
-                Choosing to pursue my degree at Edusity was one of the best
-                decisions I’ve ever made. The supportive community,
-                state-of-the-art facilities, and commitment to academic
-                excellence have truly exceeded my expectations.
-              </p>
+               Studying at Edusity has
+               transformed not just my
+              academic journey, but my
+              confidence and outlook on
+           life. The mentorship and hands-on
+          learning experiences helped me discover
+            strengths I never knew I had.
+           </p>
+
             </div>
           </li>
           <li>
@@ -75,15 +79,18 @@ const Testimonials = () => {
                 <img src={user_3} alt="" />
                 <div>
                   <h3>William Jackson 3</h3>
-                  <span>Edusity, USA</span>
+                  <span>Edusity, Manchester</span>
                 </div>
               </div>
               <p>
-                Choosing to pursue my degree at Edusity was one of the best
-                decisions I’ve ever made. The supportive community,
-                state-of-the-art facilities, and commitment to academic
-                excellence have truly exceeded my expectations.
+               Edusity prepared me for the real 
+               world in ways I didn’t expect.
+                From practical workshops to
+                 career guidance, every step was
+                  designed to help me 
+                   beyond the classroom.
               </p>
+
             </div>
           </li>
           <li>
@@ -96,11 +103,13 @@ const Testimonials = () => {
                 </div>
               </div>
               <p>
-                Choosing to pursue my degree at Edusity was one of the best
-                decisions I’ve ever made. The supportive community,
-                state-of-the-art facilities, and commitment to academic
-                excellence have truly exceeded my expectations.
+                    What makes Edusity special is
+                     the sense of belonging. I found lifelong
+                      friends, supportive faculty, and a campus 
+                      culture that truly celebrates diversity 
+                      and ambition.
               </p>
+
             </div>
           </li>
         </ul>
