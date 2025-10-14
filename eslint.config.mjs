@@ -6,7 +6,7 @@ import { defineConfig } from 'eslint/config';
 
 export default defineConfig([
   {
-    ignores: ['dist/**', 'tailwind.config.js', 'postcss.config.js', 'vite.config.js'],
+    ignores: ['dist/**', 'vite.config.js'], // ✅ Removed tailwind/postcss
   },
   {
     files: ['**/*.{js,jsx}'],
@@ -33,8 +33,8 @@ export default defineConfig([
     rules: {
       ...js.configs.recommended.rules,
       ...react.configs.recommended.rules,
-      'react/react-in-jsx-scope': 'off', // ✅ Optional for React 17+
-      'react/prop-types': 'off',         // ✅ Optional if using TypeScript or skipping PropTypes
+      'react/react-in-jsx-scope': 'off',
+      'react/prop-types': 'off',
     },
   },
 ]);
