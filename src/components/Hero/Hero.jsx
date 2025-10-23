@@ -57,7 +57,7 @@ const Hero = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Explore More <img src="/Educity-React/assets/dark-arrow.png" alt="Arrow icon" />
+          Explore More <img src="/assets/dark-arrow.png" alt="Arrow icon" />
         </motion.button>
       </motion.div>
     </div>
