@@ -1,6 +1,5 @@
 import React from 'react';
 import './hero.css';
-import dark_arrow from '../../assets/dark-arrow.png';
 import { motion } from 'framer-motion';
 
 const Hero = () => {
@@ -58,7 +57,7 @@ const Hero = () => {
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
         >
-          Explore More <img src={dark_arrow} alt="" />
+          Explore More <img src="/Educity-React/assets/dark-arrow.png" alt="Arrow icon" />
         </motion.button>
       </motion.div>
     </div>

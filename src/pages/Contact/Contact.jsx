@@ -1,10 +1,5 @@
 import React from 'react';
 import './Contact.css';
-import msg_icon from '../../assets/msg-icon.png';
-import mail_icon from '../../assets/mail-icon.png';
-import phone_icon from '../../assets/phone-icon.png';
-import location_icon from '../../assets/location-icon.png';
-import white_arrow from '../../assets/white-arrow.png';
 import { motion } from 'framer-motion';
 
 const Contact = () => {
@@ -48,16 +43,16 @@ const Contact = () => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         viewport={{ once: true }}
       >
-        <h3>Send Us a Message <img src={msg_icon} alt="" /></h3>
+        <h3>Send Us a Message <img src="/assets/msg-icon.png" alt="Message icon" /></h3>
         <p>
           Feel free to reach out through the contact form or find our contact information below. 
           Your feedback, questions, and suggestions are important to us as we strive to provide 
           exceptional service to our university community.
         </p>
         <ul>
-          <li><img src={mail_icon} alt="" /> Contact@HabibShehu</li>
-          <li><img src={phone_icon} alt="" /> +2349130710700</li>
-          <li><img src={location_icon} alt="" /> Katsina State, Nigeria</li>
+          <li><img src="/assets/mail-icon.png" alt="Mail icon" /> Contact@HabibShehu</li>
+          <li><img src="/assets/phone-icon.png" alt="Phone icon" /> +2349130710700</li>
+          <li><img src="/assets/location-icon.png" alt="Location icon" /> Katsina State, Nigeria</li>
         </ul>
       </motion.div>
 
@@ -81,7 +76,7 @@ const Contact = () => {
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
           >
-            Submit Now <img src={white_arrow} alt="" />
+            Submit Now <img src="/assets/white-arrow.png" alt="Arrow icon" />
           </motion.button>
         </form>
         <span>{result}</span>

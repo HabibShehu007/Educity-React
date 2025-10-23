@@ -1,0 +1,117 @@
+/* === Section Wrapper === */
+.programs-preview {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f5f7fa;
+}
+
+.programs-preview h2 {
+  font-size: 2.2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.programs-preview .intro {
+  font-size: 1rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+  color: #555;
+}
+
+/* === Grid Layout === */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+@media (max-width: 768px) {
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .programs-preview {
+    padding: 40px 15px;
+  }
+
+  .programs-grid {
+    gap: 20px;
+    grid-template-columns: repeat(2, 1fr); /* 2x2 layout on mobile */
+  }
+}
+
+/* === Card Styles === */
+.program-card {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+.program-card .icon {
+  font-size: 2.5rem;
+  color: #0077cc;
+  margin-bottom: 10px;
+}
+
+.program-card h3 {
+  font-size: 1.2rem;
+  margin-bottom: 8px;
+  color: #333;
+}
+
+.program-card p {
+  font-size: 0.95rem;
+  color: #444;
+}
+
+/* === Button Styles === */
+.learn-more-btn {
+  display: inline-block;
+  padding: 8px 20px;
+  max-width: 250px;
+  width: 100%;
+  background: #0077cc;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: 600;
+  transition: background 0.3s ease;
+}
+
+.learn-more-btn:hover {
+  background: #005fa3;
+}
+
+@media (max-width: 480px) {
+  .program-card {
+    padding: 16px;
+  }
+
+  .program-card .icon {
+    font-size: 2.2rem;
+  }
+
+  .program-card h3 {
+    font-size: 1.1rem;
+  }
+
+  .program-card p {
+    font-size: 0.9rem;
+  }
+
+  .learn-more-btn {
+    font-size: 0.95rem;
+  }
+}

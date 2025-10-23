@@ -3,13 +3,15 @@ import './Footer.css'
 
 const Footer = () => {
   return (
-    <div className='footer'>
-    <p>@ 2025 Edusity. All Right Reserved</p>
-    <ul>
-        <li>Temrs of Service</li>
-        <li>Privacy Policy</li>
-    </ul>
-    </div>
+    <footer className='footer'>
+      <div className='footer-content'>
+        <p className='footer-copy'>&copy; 2025 Edusity. All Rights Reserved.</p>
+        <ul className='footer-links'>
+          <li><a href='#'>Terms of Service</a></li>
+          <li><a href='#'>Privacy Policy</a></li>
+        </ul>
+      </div>
+    </footer>
   )
 }
 

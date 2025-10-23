@@ -1,8 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './About.css';
-import about_img from '../../assets/about.png';
-import play_icon from '../../assets/play-icon.png';
 import { motion } from 'framer-motion';
 
 const About = ({ setPlayState }) => {
@@ -15,10 +13,10 @@ const About = ({ setPlayState }) => {
         transition={{ duration: 0.6, ease: 'easeOut' }}
         viewport={{ once: true }}
       >
-        <img src={about_img} alt="" className='about-img' />
+        <img src="/assets/about.png" alt="About section" className='about-img' />
         <motion.img
-          src={play_icon}
-          alt=""
+          src="/assets/play-icon.png"
+          alt="Play icon"
           className='play-icon'
           onClick={() => setPlayState(true)}
           whileHover={{ scale: 1.1 }}

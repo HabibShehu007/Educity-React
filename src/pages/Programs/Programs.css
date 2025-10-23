@@ -1,0 +1,115 @@
+/* === Section Wrapper === */
+.programs-preview {
+  padding: 60px 20px;
+  text-align: center;
+  background: #f5f7fa;
+}
+
+/* === Intro Section === */
+.programs-intro {
+  max-width: 700px;
+  margin: 0 auto 40px;
+  text-align: center;
+  color: #444;
+}
+
+.programs-intro h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #222;
+}
+
+.programs-intro p {
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+/* === Grid Layout === */
+.programs-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 24px;
+  margin-bottom: 30px;
+}
+
+/* === Card Styles === */
+.program-card {
+  background: #fff;
+  padding: 20px;
+  max-width: 400px;
+  margin: 0 auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  text-align: center;
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.program-card:hover {
+  transform: translateY(-5px);
+}
+
+/* === Image Styling === */
+.program-card img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+/* === Caption Overlay === */
+.caption {
+  border-radius: 10px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background: rgba(0, 15, 152, 0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #fff;
+  opacity: 0;
+  padding-top: 70%;
+  transition: 0.4s;
+}
+
+.program-card:hover .caption {
+  opacity: 1;
+  padding-top: 0;
+}
+
+.caption img {
+  width: 60px;
+  margin-bottom: 10px;
+}
+
+.caption p {
+  font-size: 1rem;
+  font-weight: 600;
+}
+
+/* === Responsive Layout === */
+@media (max-width: 480px) {
+  .programs-preview {
+    padding: 40px 15px;
+  }
+
+  .programs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .program-card {
+    padding: 16px;
+  }
+
+  .caption img {
+    width: 36px;
+  }
+
+  .caption p {
+    font-size: 0.95rem;
+  }
+}

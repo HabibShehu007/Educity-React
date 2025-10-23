@@ -1,10 +1,5 @@
 import React from 'react';
 import './Campus.css';
-import gallery_1 from '../../assets/gallery-1.png';
-import gallery_2 from '../../assets/gallery-2.png';
-import gallery_3 from '../../assets/gallery-3.png';
-import gallery_4 from '../../assets/gallery-4.png';
-import white_arrow from '../../assets/white-arrow.png';
 import { motion } from 'framer-motion';
 
 const imageVariants = {
@@ -20,9 +15,14 @@ const imageVariants = {
   }
 };
 
-const Campus = () => {
-  const galleryImages = [gallery_1, gallery_2, gallery_3, gallery_4];
+const galleryImages = [
+  '/assets/gallery-1.png',
+  '/assets/gallery-2.png',
+  '/assets/gallery-3.png',
+  '/assets/gallery-4.png'
+];
 
+const Campus = () => {
   return (
     <div className='campus'>
       <div className="gallery">
@@ -30,7 +30,7 @@ const Campus = () => {
           <motion.img
             key={index}
             src={img}
-            alt=""
+            alt={`Campus gallery ${index + 1}`}
             variants={imageVariants}
             initial="hidden"
             whileInView="visible"
@@ -48,7 +48,7 @@ const Campus = () => {
         whileHover={{ scale: 1.05 }}
         whileTap={{ scale: 0.95 }}
       >
-        See More Here <img src={white_arrow} alt="" />
+        See More Here <img src="/assets/white-arrow.png" alt="Arrow icon" />
       </motion.button>
     </div>
   );

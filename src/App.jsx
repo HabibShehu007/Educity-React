@@ -1,39 +1,29 @@
-import React, { useState } from "react";
-import Navbar from "./components/navbar/navbar";
-import Hero from "./components/hero/hero";
-import Programs from "./components/Programs/Programs";
-import Title from "./components/Title/Title";
-import About from "./components/About/About";
-import Campus from "./components/Campus/Campus";
-import Testimonials from "./components/Testimonials/Testimonials";
-import Contact from "./components/Contact/Contact";
-import Footer from "./components/Footer/Footer";
-import VideoPlayer from "./components/VideoPlayer/VideoPlayer";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import MainLayout from "./Layout/MainLayout";
+import Home from "./pages/Home/Home";
+import About from "./pages/About/About";
+import Campus from "./pages/Campus/Campus";
+import Contact from "./pages/Contact/Contact";
+import Programs from "./pages/Programs/Programs";
+import Testimonials from "./pages/Testimonials/Testimonials";
+import ScrollToHashElement from "./components/ScrollToHashElement/ScrollToHashElement";
 
-const App = () => {
-
-   const [playState, setPlayState] = useState(false);
-
-
+function App() {
   return (
-    <div>
-      <Navbar />
-      <Hero />
-      <div className="container">
-        <Title subTitle="Our PROGRAM" title="What We Offer" />
-        <Programs />
-        <About setPlayState={setPlayState}/>
-        <Title subTitle="Gallery" title="Campus Photos" />
-        <Campus />
-        <Title subTitle="TESTMONIALS" title="What Student Says" />
-        <Testimonials />
-        <Title subTitle="Contact Us" title="Get in Touch" />
-        <Contact/>
-        <Footer/>
-      </div>
-      <VideoPlayer playState={playState} setPlayState={setPlayState}/>
-    </div>
+    <BrowserRouter>
+      <ScrollToHashElement />
+      <Routes>
+        <Route element={<MainLayout />}>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/campus" element={<Campus />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/programs" element={<Programs />} />
+          <Route path="/testimonials" element={<Testimonials />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   );
-};
+}
 
 export default App;
