@@ -8,7 +8,7 @@
 
 ## 🌐 Live Demo
 
-> Click it Up: [https://HabibShehu007.github.io/Educity-React/](https://HabibShehu007.github.io/Educity-React/)
+> Click it Up: [https://habib-educity-v1.netlify.app](https://habib-educity-v1.netlify.app)
 
 ---
 
