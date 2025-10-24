@@ -1,32 +1,74 @@
+/* Campus container */
 .campus {
   margin: 80px auto;
   width: 90%;
+  max-width: 1200px;
   text-align: center;
+  padding: 0 20px;
 }
-.gallery {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
+
+/* Heading style */
+.campus-heading {
+  font-size: 2.2rem;
   margin-bottom: 40px;
+  color: #212ea0;
+  font-weight: 600;
 }
 
-.gallery img {
-  width: 23%;
-  border-radius: 10px;
+/* Gallery grid layout */
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 25px;
+  margin-bottom: 50px;
 }
 
+/* Individual gallery item */
+.gallery-item img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.06);
+  transition: transform 0.3s ease;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.03);
+}
+
+/* Caption under each image */
+.gallery-item figcaption {
+  margin-top: 8px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+/* CTA button */
 .btn.dark-btn {
   background: #212ea0;
   color: #fff;
+  padding: 12px 28px;
+  font-size: 1rem;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background 0.3s ease,
+    transform 0.2s ease;
 }
 
-/* media query */
-@media (max-width: 800px) {
-  .gallery {
-    flex-wrap: wrap;
+.btn.dark-btn:hover {
+  background: #1a2391;
+  transform: translateY(-2px);
+}
+
+/* Responsive tweaks */
+@media (max-width: 600px) {
+  .campus-heading {
+    font-size: 1.8rem;
   }
-  .gallery img {
-    width: 48%;
-    margin-bottom: 25px;
+
+  .btn.dark-btn {
+    width: 100%;
+    font-size: 0.95rem;
   }
 }

@@ -17,28 +17,28 @@ const Testimonials = () => {
 
   const users = [
     {
-      img: "/assets/user-1.png",
+      img: "/assets/user-1.webp",
       name: "William Jackson 1",
       location: "Edusity, Canada",
       quote:
         "Choosing to pursue my degree at Edusity was one of the best decisions I’ve ever made. The supportive community, state-of-the-art facilities, and commitment to academic excellence have truly exceeded my expectations.",
     },
     {
-      img: "/assets/user-2.png",
+      img: "/assets/user-2.webp",
       name: "William Jackson 2",
       location: "Edusity, Italy",
       quote:
         "Studying at Edusity has transformed not just my academic journey, but my confidence and outlook on life. The mentorship and hands-on learning experiences helped me discover strengths I never knew I had.",
     },
     {
-      img: "/assets/user-3.png",
+      img: "/assets/user-3.webp",
       name: "William Jackson 3",
       location: "Edusity, Manchester",
       quote:
         "Edusity prepared me for the real world in ways I didn’t expect. From practical workshops to career guidance, every step was designed to help me succeed beyond the classroom.",
     },
     {
-      img: "/assets/user-4.png",
+      img: "/assets/user-4.webp",
       name: "William Jackson 4",
       location: "Edusity, USA",
       quote:

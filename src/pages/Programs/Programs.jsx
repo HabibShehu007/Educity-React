@@ -18,21 +18,21 @@ const cardVariants = {
 
 const programs = [
   {
-    img: '/assets/program-1.png',
+    img: '/assets/program-1.webp',
     icon: '/assets/program-icon-1.png',
     label: 'Graduation Degree',
     desc: 'Build foundational knowledge and skills for your career journey with our undergraduate programs.',
     details: 'Our graduation programs offer a wide range of disciplines, hands-on learning, and mentorship to prepare you for real-world challenges. You’ll gain critical thinking, communication, and technical skills that form the backbone of any successful career. Whether you’re entering business, science, arts, or technology, our undergraduate degrees are designed to launch you forward.'
   },
   {
-    img: '/assets/program-2.png',
+    img: '/assets/program-2.webp',
     icon: '/assets/program-icon-2.png',
     label: 'Masters Degree',
     desc: 'Advance your expertise and open doors to leadership roles with our graduate-level programs.',
     details: 'Our master’s programs are designed for deep specialization, research opportunities, and career advancement in your chosen field. You’ll work closely with faculty mentors, engage in real-world projects, and develop leadership skills that set you apart. Whether you’re pursuing an MBA, MSc, or MA, our graduate degrees help you lead with confidence.'
   },
   {
-    img: '/assets/program-3.png',
+    img: '/assets/program-3.webp',
     icon: '/assets/program-icon-3.png',
     label: 'Post Degree',
     desc: 'Specialize further or shift your career path with our post-degree certifications and diplomas.',
