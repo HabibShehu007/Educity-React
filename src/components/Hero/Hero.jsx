@@ -1,6 +1,8 @@
 import React from 'react';
 import './hero.css';
 import { motion } from 'framer-motion';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowDown } from '@fortawesome/free-solid-svg-icons';
 
 const Hero = () => {
   return (
@@ -44,21 +46,17 @@ const Hero = () => {
           Needed to Excel in the Dynamic field of Education
         </motion.p>
 
-        <motion.button
-          className='btn'
-          initial={{ opacity: 0, scale: 0.8 }}
-          animate={{ opacity: 1, scale: 1 }}
+        <motion.div
+          className="scroll-down"
+          animate={{ y: [0, 10, 0] }}
           transition={{
-            type: 'spring',
-            stiffness: 200,
-            damping: 15,
-            delay: 0.5,
+            repeat: Infinity,
+            duration: 1.5,
+            ease: "easeInOut"
           }}
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
         >
-          Explore More <img src="/assets/dark-arrow.png" alt="Arrow icon" />
-        </motion.button>
+          <FontAwesomeIcon icon={faArrowDown} size="2x" />
+        </motion.div>
       </motion.div>
     </div>
   );
