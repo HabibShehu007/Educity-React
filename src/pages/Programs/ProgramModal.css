@@ -1,0 +1,62 @@
+/* modal bg */
+.program-modal {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 999;
+}
+
+/* modal box */
+.modal-content {
+  background: #1e1e2f;
+  padding: 30px;
+  max-width: 500px;
+  width: 90%;
+  border-radius: 10px;
+  text-align: center;
+  position: relative;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* close icon */
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 16px;
+  font-size: 24px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+/* icon inside modal */
+.modal-icon {
+  width: 60px;
+  margin-bottom: 20px;
+}
+
+/* title */
+.modal-content h3 {
+  font-size: 1.6rem;
+  margin-bottom: 12px;
+  color: #ffffff;
+}
+
+/* long text */
+.modal-content p {
+  font-size: 1rem;
+  color: #ffffff;
+  line-height: 1.7;
+}
+
+/* icon inside modal */
+.modal-icon {
+  width: 60px;
+  height: auto;
+  margin-bottom: 20px;
+}
