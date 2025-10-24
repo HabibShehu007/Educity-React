@@ -1,17 +1,17 @@
 /* === Section Wrapper === */
-.programs-preview {
+.academic-preview {
   padding: 60px 20px;
   text-align: center;
   background: #f5f7fa;
 }
 
-.programs-preview h2 {
+.academic-preview h2 {
   font-size: 2.2rem;
   margin-bottom: 10px;
   color: #222;
 }
 
-.programs-preview .intro {
+.academic-intro {
   font-size: 1rem;
   max-width: 700px;
   margin: 0 auto 30px;
@@ -19,99 +19,109 @@
 }
 
 /* === Grid Layout === */
-.programs-grid {
+.academic-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   gap: 24px;
-  margin-bottom: 30px;
+  max-width: 1200px;
+  margin: 0 auto 40px;
+  padding: 0 20px;
 }
 
-@media (max-width: 768px) {
-  .programs-grid {
+@media (max-width: 992px) {
+  .academic-grid {
     grid-template-columns: repeat(2, 1fr);
   }
 }
 
-@media (max-width: 480px) {
-  .programs-preview {
-    padding: 40px 15px;
-  }
-
-  .programs-grid {
-    gap: 20px;
-    grid-template-columns: repeat(2, 1fr); /* 2x2 layout on mobile */
+@media (max-width: 600px) {
+  .academic-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
   }
 }
 
 /* === Card Styles === */
-.program-card {
+.academic-card {
   background: #fff;
-  padding: 20px;
-  max-width: 400px;
-  margin: 0 auto;
+  padding: 24px;
   border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
   text-align: center;
   transition: transform 0.3s ease;
+  width: 100%;
 }
 
-.program-card:hover {
+.academic-card:hover {
   transform: translateY(-5px);
 }
 
-.program-card .icon {
+.academic-icon {
   font-size: 2.5rem;
   color: #0077cc;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
 }
 
-.program-card h3 {
-  font-size: 1.2rem;
-  margin-bottom: 8px;
+.academic-card h3 {
+  font-size: 1.3rem;
+  margin-bottom: 10px;
   color: #333;
 }
 
-.program-card p {
-  font-size: 0.95rem;
-  color: #444;
+.academic-card p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* === Button Wrapper === */
+.academic-btn-wrapper {
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* === Button Styles === */
-.learn-more-btn {
+.academic-btn {
   display: inline-block;
-  padding: 8px 20px;
-  max-width: 250px;
-  width: 100%;
+  padding: 10px 24px;
   background: #0077cc;
   color: #fff;
-  border-radius: 5px;
+  border-radius: 6px;
   text-decoration: none;
   font-weight: 600;
   transition: background 0.3s ease;
+  max-width: 250px;
+  width: 100%;
+  margin: 0 auto;
 }
 
-.learn-more-btn:hover {
+.academic-btn:hover {
   background: #005fa3;
 }
 
-@media (max-width: 480px) {
-  .program-card {
+/* === Mobile Adjustments === */
+@media (max-width: 600px) {
+  .academic-card {
     padding: 16px;
   }
 
-  .program-card .icon {
+  .academic-icon {
     font-size: 2.2rem;
+    margin-bottom: 8px;
   }
 
-  .program-card h3 {
+  .academic-card h3 {
     font-size: 1.1rem;
+    margin-bottom: 6px;
   }
 
-  .program-card p {
-    font-size: 0.9rem;
-  }
-
-  .learn-more-btn {
+  .academic-card p {
     font-size: 0.95rem;
+    line-height: 1.4;
+  }
+
+  .academic-btn {
+    font-size: 0.95rem;
+    padding: 8px 20px;
   }
 }

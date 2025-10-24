@@ -46,51 +46,52 @@ const programs = [
 
 const ProgramsPreview = () => {
   return (
-    <section id="programs" className="programs-preview section-preview container">
-      <motion.h2
-        initial={{ opacity: 0, y: 50 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ type: 'spring', stiffness: 100, damping: 15 }}
-      >
-        Our Academic Programs
-      </motion.h2>
+    <section id="academic-programs" className="academic-preview section-preview container">
+  <motion.h2
+    initial={{ opacity: 0, y: 50 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ type: 'spring', stiffness: 100, damping: 15 }}
+  >
+    Our Academic Programs
+  </motion.h2>
 
-      <motion.p
-        className="intro"
-        initial={{ opacity: 0, y: 30 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        transition={{ delay: 0.2, type: 'spring', stiffness: 90 }}
-      >
-        At Educity, we offer a diverse range of programs designed to equip students with the skills and mindset to thrive in a dynamic world.
-      </motion.p>
+  <motion.p
+    className="academic-intro"
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    transition={{ delay: 0.2, type: 'spring', stiffness: 90 }}
+  >
+    At Educity, we offer a diverse range of programs designed to equip students with the skills and mindset to thrive in a dynamic world.
+  </motion.p>
 
-      <div className="programs-grid">
-        {programs.map((program, index) => (
-          <motion.div
-            className="program-card"
-            key={index}
-            initial={{ opacity: 0, y: 40 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1, type: 'spring', stiffness: 120 }}
-          >
-            <div className="icon">{program.icon}</div>
-            <h3>{program.title}</h3>
-            <p>{program.description}</p>
-          </motion.div>
-        ))}
-      </div>
-
+  <div className="academic-grid">
+    {programs.map((program, index) => (
       <motion.div
-        className="learn-more-wrapper"
-        initial={{ opacity: 0, scale: 0.9 }}
-        whileInView={{ opacity: 1, scale: 1 }}
-        transition={{ delay: 0.5, type: 'spring', stiffness: 150 }}
+        className="academic-card"
+        key={index}
+        initial={{ opacity: 0, y: 40 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        transition={{ delay: index * 0.1, type: 'spring', stiffness: 120 }}
       >
-        <Link to="/programs" className="btn learn-more-btn">
-          See All Programs
-        </Link>
+        <div className="academic-icon">{program.icon}</div>
+        <h3>{program.title}</h3>
+        <p>{program.description}</p>
       </motion.div>
-    </section>
+    ))}
+  </div>
+
+  <motion.div
+    className="academic-btn-wrapper"
+    initial={{ opacity: 0, scale: 0.9 }}
+    whileInView={{ opacity: 1, scale: 1 }}
+    transition={{ delay: 0.5, type: 'spring', stiffness: 150 }}
+  >
+    <Link to="/programs" className="btn academic-btn">
+      See All Programs
+    </Link>
+  </motion.div>
+</section>
+
   );
 };
 
